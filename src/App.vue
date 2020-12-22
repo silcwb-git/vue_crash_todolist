@@ -1,6 +1,6 @@
 <template>
   <div id="App">
-    <Todos />
+    <Todos v-bind:todos="todos" />
   </div>
 </template>
 
