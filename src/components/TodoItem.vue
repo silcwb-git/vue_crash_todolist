@@ -1,7 +1,7 @@
 <template>
     <div class="todo-item" v-bind:class="{'is-complete':todo.completed}">
         <p>
-            <input type="checkbox" v-on:change="markComplete">
+            <input type="checkbox" v-on:change="markComplete" >
             {{todo.title}}
         </p>
     </div>
@@ -11,9 +11,14 @@
 export default {
     name: "TodoItem",
     props: ["todo"],
+    data() {
+      return {
+        todoLocal: this.todo,
+      };
+    },
     methods: {
         markComplete() {
-            this.todo.completed = !this.todo.completed;
+            this.todoLocal.completed = !this.todoLocal.completed;
         }
     }
 }
@@ -30,7 +35,7 @@ export default {
         text-decoration: line-through;
     }
 
-    .dwl {
+    .del {
         background: #ff0000;
         color: #fff;
         border: none;

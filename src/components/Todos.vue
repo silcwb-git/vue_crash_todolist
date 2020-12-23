@@ -5,7 +5,7 @@
      </div>
   </div> 
 </template>
-
+ 
 <script>
 
 import TodoItem from './TodoItem';
@@ -16,6 +16,7 @@ export default {
       TodoItem
     },
     props: ["todos"]
+    
 }
 </script>
 
