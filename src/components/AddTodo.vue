@@ -10,7 +10,6 @@
 <script >
 
 import {v4} from 'uuid';
-
 export default {
     name: "AddTodo",
     data() {

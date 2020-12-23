@@ -7,7 +7,6 @@
 </template>
 
 <script >
-
   import Header from './components/layout/Header'
   import Todos from './components/Todos'
   import AddTodo from './components/AddTodo'
@@ -70,5 +69,4 @@ export default {
     padding: 7px 20px;
     cursor: pointer;
   }
-
 </style>
