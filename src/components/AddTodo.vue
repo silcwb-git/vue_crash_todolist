@@ -9,7 +9,7 @@
 
 <script >
 
-import {v4} from 'uuid';
+//import {v4} from 'uuid';
 export default {
     name: "AddTodo",
     data() {
@@ -20,9 +20,9 @@ export default {
     methods: {
         addTodo(e) {
             e.preventDefault();
-            const uuid = v4()
+            //const uuid = v4()
             const newTodo = {
-                id: uuid,
+                //id: uuid,
                 title: this.title,
                 completed: false
             }
